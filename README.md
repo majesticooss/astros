@@ -1,8 +1,8 @@
-<a href="https://astros.zank.studio">
+<a href="astros.majestico.co">
   <img src=".github/images/astros.gif" />
 </a>
 
-# [Astros](https://astros.zank.studio)
+# [Astros](astros.majestico.co)
 
 <a href="https://astro.build/">![Astro](.github/images/astro-icon.png)</a>
 <a href="https://tailwindcss.com/">![Tailwind](.github/images/tailwind-icon.png)</a>
@@ -20,7 +20,7 @@ This project is strongly inspired by [Astroship](https://github.com/surjithctly/
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zankhq/astros)
 
 
-### [🧪 Site preview →](https://astros.zank.studio)
+### [🧪 Site preview →](astros.majestico.co)
 
 ### [🧑‍🚀 Astro website →](https://astro.build/)
 
@@ -82,7 +82,7 @@ You can check the deploy documentation at https://docs.astro.build/en/guides/dep
 
 ## ✍️ Admin dashboard
 
-You can access the admin dashboard for editing blog post at `/admin` (https://astros.zank.studio/admin)
+You can access the admin dashboard for editing blog post at `/admin` (https://astros.majestico.co/admin)
 
 For more information follow Sveltia CMS documentation at [https://github.com/sveltia/sveltia-cms](https://github.com/sveltia/sveltia-cms)
 
@@ -223,4 +223,4 @@ npm link
 
 ---
 
-<p align="right"><a href="https://zank.studio/" target="_blank">zank.studio</p>
+<p align="right"><a href="https://astros.majestico.co/" target="_blank">astros.majestico.co</p>
