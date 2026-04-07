@@ -1,8 +1,8 @@
-<a href="astros.majestico.co">
+<a href="https://astros.majestico.co">
   <img src=".github/images/astros.gif" />
 </a>
 
-# [Astros](astros.majestico.co)
+# [Astros](https://astros.majestico.co)
 
 <a href="https://astro.build/">![Astro](.github/images/astro-icon.png)</a>
 <a href="https://tailwindcss.com/">![Tailwind](.github/images/tailwind-icon.png)</a>
@@ -20,7 +20,7 @@ This project is strongly inspired by [Astroship](https://github.com/surjithctly/
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zankhq/astros)
 
 
-### [🧪 Site preview →](astros.majestico.co)
+### [🧪 Site preview →](https://astros.majestico.co)
 
 ### [🧑‍🚀 Astro website →](https://astro.build/)
 
