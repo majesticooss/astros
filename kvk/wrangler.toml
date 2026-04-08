@@ -1,0 +1,5 @@
+name = "astros"
+main = "src/worker.js"
+compatibility_date = "2025-03-05"
+workers_dev = false
+preview_urls = false

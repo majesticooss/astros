@@ -9,34 +9,30 @@ import i18next, { changeLanguage } from "i18next";
 
 changeLanguage("it");
 
-export async function getStaticPaths() {
-	changeLanguage("it");
-	const posts = await getCollection("blog", ({ data }) => {
-		return !data.draft && data.publishDate < new Date();
-	});
-	const localizedPosts = posts.filter((page) => {
-		const [lang, ...slug] = page.slug.split("/");
-		return lang === i18next.language;
-	});
-	const tags = new Set();
-	localizedPosts.map((post) => {
-		Array.isArray(post.data.tags) &&
-			post.data.tags.map((tag) => tags.add(tag.toLowerCase()));
-	});
-	return Array.from(tags).map((tag) => {
-		return {
-			params: { tag: tag },
-			props: {
-				posts: localizedPosts.filter(
-					(post) =>
-						Array.isArray(post.data.tags) &&
-						post.data.tags.find((elem) => elem.toLowerCase() === tag),
-				),
-				tag: tag,
-				lang: i18next.language,
-			},
-		};
-	});
+export async function getStaticPaths() {changeLanguage('it')
+    const posts = await getCollection("blog", ({ data }) => {
+        return !data.draft && data.publishDate < new Date();
+    });
+    const localizedPosts = posts.filter((page) => {
+        const [lang, ...slug] = page.slug.split("/");
+        return lang === i18next.language;
+    });
+    const tags = new Set();
+    localizedPosts.map((post) => {
+        Array.isArray(post.data.tags) &&
+            post.data.tags.map((tag) => tags.add(tag.toLowerCase()));
+    });
+    return Array.from(tags).map((tag) => {
+        return {
+            params: { tag: tag },
+            props: {
+                posts: localizedPosts.filter((post) => Array.isArray(post.data.tags) &&
+                    post.data.tags.find((elem) => elem.toLowerCase() === tag)),
+                tag: tag,
+                lang: i18next.language,
+            },
+        };
+    });
 }
 // Get the post directly from the prop on render
 const { posts, tag, lang } = Astro.props;

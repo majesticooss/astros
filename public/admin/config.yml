@@ -4,9 +4,9 @@ logo_url: /logo.svg
 
 backend:
     name: "github"
-    repo: zankhq/astros
+    repo: plboilingNL/astros
     branch: main
-    base_url: https://cms.majestico.workers.dev
+    base_url: https://www.deskcode.nl
     automatic_deployments: false
 
 media_folder: "public/images"
